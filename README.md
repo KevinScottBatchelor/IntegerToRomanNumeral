@@ -1,12 +1,13 @@
-# Spring Boot + VueJS Template
+#INTEGER TO ROMAN NUMERAL
 
-This is a template for anyone looking to use Spring Boot + Vue.JS in the same project. 
 
-## Development
+This is a REST service that converts an integer into a roman numeral. It provides a webpage with a form that consumes the roman numeral service.
 
-- Run the Spring Boot application which will run on port 8080
-- Run the Vue application (/src/frontend)  which will run on port 3000
-- All calls to `/api/**` are proxied to 8080 thanks to `vue.config.js`
+Roman numerals only go up to M (1,000). According to the rules of addition and subtraction, this means that the biggest number we can form in Roman numerals is MMMCMXCIX, or 3,999. This application will take all numbers 0-3,999 and convert them to their proper roman numeral.
+
+If a user enters '0', 'nulla' will be returned, which is the way Roman's referred to the number 0.
+
+If a user enters any number other than 0 - 3,999 inclusive, an error message prompting the user to retry with a number between 0 - 3,999.
 
 ## Packaging 
 
@@ -17,7 +18,10 @@ The Maven plugin `maven-resources-plugin` will copy the contents of the build di
 
 The `system.properties` is a file I used for Heroku to set the Java version and deploy the application. 
 
-https://spring-boot-vue-template.herokuapp.com/
+
+Link to see it working live on Heroku:
+
+(https://integer-to-roman-numeral.herokuapp.com/)
 
 
 
