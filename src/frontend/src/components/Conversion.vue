@@ -136,6 +136,18 @@ button {
   grid-area: button;
 }
 
+button:active {
+  background-color: rgb(128, 128, 128);
+  border: 4px solid rgb(53, 53, 53);
+  transition: 0.1s;
+}
+
+button:hover {
+  background-color: rgb(60, 60, 60);
+  color: rgb(217, 217, 217);
+  transition: 0.6s;
+}
+
 #result {
   width: 650px;
   font-weight: 600;
