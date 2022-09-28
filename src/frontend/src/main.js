@@ -2,6 +2,6 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import axios from 'axios'
 
-axios.defaults.baseURL = process.env.VUE_APP_REMOTE_API;
+axios.defaults.baseURL = process.env.PORT || 3000;
 
 createApp(App).mount('#app')
